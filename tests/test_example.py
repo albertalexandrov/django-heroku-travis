@@ -3,4 +3,4 @@ def test_add():
 
 
 def test_mul():
-    assert 1 * 2 == 1
+    assert 2 * 2 == 4
