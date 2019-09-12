@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t albert1989/django-heroku-travis -f Dockerfile.dev .
+
+script:
+  - docker run albert1989/django-heroku-travis pytest
