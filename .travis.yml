@@ -15,4 +15,3 @@ deploy:
   provider: heroku
   app: django-heroku-travis
   api_key: $HEROKU_AUTH_TOKEN
-  script: docker build -t albert1989/django-heroku-travis . && heroku container:push web && heroku container:release web
