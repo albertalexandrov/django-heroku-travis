@@ -10,3 +10,8 @@ before_install:
 
 script:
   - docker run albert1989/django-heroku-travis pytest
+
+deploy:
+  provider: heroku
+  app: django-heroku-travis
+  api_key: $HEROKU_AUTH_TOKEN
